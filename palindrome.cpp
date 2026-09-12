@@ -2,7 +2,7 @@
 using namespace std;
 bool ispalindrome (int x){
     int n=x;
-    int m;
+    int m=0;
     while (n>0){
         int r=n%10;
         n=n/10;
@@ -20,6 +20,5 @@ int main()
         int x;
         cin>>x;
         if (ispalindrome(x)){
-            cout<<"true";
+            cout<<"true";}
     }
-
