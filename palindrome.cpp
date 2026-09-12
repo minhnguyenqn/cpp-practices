@@ -1,19 +1,17 @@
 #include <iostream>
 using namespace std;
 bool ispalindrome (int x){
-    int n=x;
-    int m=0;
-    while (n>0){
-        int r=n%10;
-        n=n/10;
-        m=m*10+r;
-    }
-    if (m==x){
-        return true;
-    }
-    else{
-        return false;
-    }
+   string s= to_string(x);
+   int i=0;
+   int j=s.length()-1;
+   while (i<j){
+       if (s[i]!=s[j]){
+           return false;
+       }
+       i++;
+       j--;
+   }
+   return true;
 }
 int main()
     {
